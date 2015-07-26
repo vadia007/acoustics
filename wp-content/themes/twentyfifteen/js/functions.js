@@ -182,6 +182,42 @@
         $(this).addClass('active');
         $('.tab-content').removeClass('active');
         $('#' + $(this).attr('data-id')).addClass('active');
-    })
+    });
+
+    //change type on home
+    $('#filter').on('change', function() {
+        $('.product-box').hide();
+        var selectedElements = $('.listing').find('.' + $(this).val()),
+            number;
+
+        $(selectedElements).show();
+        $.each(selectedElements, function(index, element) {
+            number = index + 1;
+            number = number.length > 1 ? number : '0' + number;
+            $(element).children('h4').text(number);
+        });
+    });
+
+    //slider on product page
+    $('.product-img-slider').bxSlider({
+        mode: 'fade',
+        controls: false,
+        pager: true,
+        speed: 1000
+    });
+
+    //home slider
+    $('.product-slider-wrap').bxSlider({
+        pager: false,
+        speed: 800,
+        minSlides: 1,
+        maxSlides: 9,
+        moveSlides: 1,
+        slideWidth: 480,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        nextSelector: '#product-slider-next',
+        prevSelector: '#product-slider-prev'
+    });
 
 } )( jQuery );

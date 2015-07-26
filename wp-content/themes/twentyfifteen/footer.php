@@ -12,18 +12,42 @@
 
 	</div><!-- .site-content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<?php
-				/**
-				 * Fires before the Twenty Fifteen footer text for footer customization.
-				 *
-				 * @since Twenty Fifteen 1.0
-				 */
-				do_action( 'twentyfifteen_credits' );
-			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
+	<footer>
+
+        <div class="inside">
+            <div class="info">
+                <h2><?php _e('Акустика Sonitus');?></h2>
+                <p>
+                    Tina Ujevića 26, Koprivnica<br>
+                    48000 Croatia
+                    <br><br>
+					<span>
+					+385 (0) 91 510 4041<br>
+					info@sonitusacoustics.eu
+					</span>
+                </p>
+            </div>
+
+            <?php $args = array(
+                'menu' => 3,
+                'container_class' => 'footer-menu',
+                'menu_id' => 'footer-menu'
+            );?>
+
+            <?php wp_nav_menu( $args );?>
+
+            <div class="copyright">
+                <p><?php _e('© Sonitus Acoustics. All rights reserved.');?></p>
+                <img class="logo"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/img/sonitus-acoustics-footer.png"
+                     alt="Logo"/>
+            </div>
+
+
+        </div>
+
+
+
 	</footer><!-- .site-footer -->
 
 </div><!-- .site -->

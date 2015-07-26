@@ -230,12 +230,11 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	/*clear: both;*/
 	font-weight: 700;
 }
 
 p {
-	margin-bottom: 1.6em;
 }
 
 b,
@@ -650,29 +649,18 @@ input[type="radio"] {
 
 }
 @font-face {
-    font-family: 'bebas_neue_cyrillicregular';
-    src: url('fonts/bebas_neue_cyrillic-webfont.eot');
-    src: url('fonts/bebas_neue_cyrillic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/bebas_neue_cyrillic-webfont.woff2') format('woff2'),
-    url('fonts/bebas_neue_cyrillic-webfont.woff') format('woff'),
-    url('fonts/bebas_neue_cyrillic-webfont.ttf') format('truetype'),
-    url('fonts/bebas_neue_cyrillic-webfont.svg#bebas_neue_cyrillicregular') format('svg');
+    font-family: 'aa_bebas_neueregular';
+    src: url('fonts/aa-bebasneue-webfont.eot');
+    src: url('fonts/aa-bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/aa-bebasneue-webfont.woff2') format('woff2'),
+    url('fonts/aa-bebasneue-webfont.woff') format('woff'),
+    url('fonts/aa-bebasneue-webfont.ttf') format('truetype'),
+    url('fonts/aa-bebasneue-webfont.svg#aa_bebas_neueregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'bebas_neue_regularregular';
-    src: url('fonts/bebas_neue_regular-webfont.eot');
-    src: url('fonts/bebas_neue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('fonts/bebas_neue_regular-webfont.woff2') format('woff2'),
-    url('fonts/bebas_neue_regular-webfont.woff') format('woff'),
-    url('fonts/bebas_neue_regular-webfont.ttf') format('truetype'),
-    url('fonts/bebas_neue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 #header {
     position: relative;
@@ -736,7 +724,7 @@ input[type="radio"] {
     width: 100%;
 }
 h1, h2, h3, h4, h5 {
-    font-family: "bebas_neue_cyrillicregular";
+    font-family: "BebasNeue Regular";
     font-weight: normal;
     letter-spacing: 1.5px;
 }
@@ -764,6 +752,7 @@ h1, h2, h3, h4, h5 {
     font-size: 64px;
     line-height: 64px;
     padding-bottom: 15px;
+    text-transform: uppercase;
 }
 .home .news p {
     position: relative;
@@ -1131,5 +1120,778 @@ a.fancybox-next span {
     color: #2a2b2f;
 }
 .news-page {
+    padding-bottom: 60px;
+}
+.news-content p.date {
+
+}
+.news-page .news-box .news-content h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    padding: 10px 0 20px;
+}
+.news-page .news-box .news-content {
+    position: relative;
+    float: left;
+    width: 55%;
+    text-align: left;
+}
+.products-page .listing {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.products-page .filter {
+    position: relative;
+    float: right;
+    width: 140px;
+}
+.products-page .filter .input {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    padding: 7px 10px;
+    margin-top: -45px;
+    margin-bottom: 8px;
+    background: #f3f4f6;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.products-page .product-box {
+    position: relative;
+    float: left;
+    width: 361px;
+    text-align: left;
+    margin: 0px 28.5px 60px 0;
+}
+.products-page .product-box:nth-child(3n) {
+    margin-right: 0;
+}
+.products-page .product-box:hover > .product-image {
+    background-position: 0 -252px;
+}
+.products-page .product-box:hover > h4,
+.products-page .product-box:hover > h3{
+    color: #c0504f;
+}
+.products-page .product-box .product-image {
+    position: relative;
+    float: left;
+    width: 361px;
+    height: 252px;
+    background-size: 100%;
+}
+.products-page .product-box h4 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'BebasNeue Bold';
+    margin: 40px 0 0 0;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000;
+    letter-spacing: 0;
+}
+.products-page .product-box h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 40px 0 0 0;
+    font-size: 42px;
+    line-height: 42px;
+    color: #2a2b2f;
+}
+.products-listing-page {
+    padding-bottom: 60px;
+}
+.products-listing-page .description {
+    position: relative;
+    float: right;
+    width: 455px;
+    text-align: left;
+}
+.products-listing-page .list {
+    position: relative;
+    float: left;
+    width: 655px;
+}
+.products-listing-page .list .item {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 140px;
+    background: #f3f4f6;
+    margin: 5px 0 10px;
+    overflow: hidden;
+}
+.products-listing-page .list .item img {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 140px;
+    background-size: 100% auto;
+}
+.products-listing-page .list .item h4 {
+    position: relative;
+    padding-left: 235px;
+    text-align: left;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin-top: 34px;
+    color: #2a2b2f;
+    clear: none;
+    text-transform: capitalize;
+}
+.products-listing-page .list .item h3 {
+    position: relative;
+    padding-left: 235px;
+    text-align: left;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #c0504f;
+    clear: none;
+}
+.products-listing-page .list .item .arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: -20px;
+    background: url('img/slider-next.png') no-repeat center center;
+    border: 1px solid #515151;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.products-listing-page .list .item:hover {
+    background-color: #eaebec;
+}
+.products-listing-page .list .item:hover > .arrow {
+    border-color: #c0504f;
+}
+.products-listing-page .become-distributor {
+    margin-top: 50px;
+    clear: both;
+    text-align: center;
+}
+.become-distributor h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 40px;
+    text-indent: 0;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+.become-distributor .btn {
+    display: inline-block;
+    width: 256px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #c0504f;
+    border: 2px solid #c0504f;
+}
+.become-distributor .btn:hover {
+    border-color: #2a2b2f;
+}
+.product-page {
+    padding-bottom: 60px;
+}
+.product-page .product-slider {
+    position: relative;
+    float: left;
+    width: 595px;
+}
+.product-page .product-info {
+    position: relative;
+    float: right;
+    width: 455px;
+    text-align: left;
+}
+.product-page .product-info h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #c0504f;
+    letter-spacing: 0;
+    font-family: 'Play', sans-serif;
+}
+.product-page .product-info .description {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+.product-page .product-info .item {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 22px;
+    border-bottom: 1px solid #2a2b2f;
+}
+.product-page .product-info .item label {
+    position: relative;
+    float: left;
+    width: 135px;
+    font-weight: bold;
+}
+.product-page .product-info .item p {
+    position: relative;
+    padding-left: 135px;
+}
+.product-page .product-info .installation {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 15px 0;
+}
+.product-page .product-info .btn {
+    display: inline-block;
+    width: 256px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #c0504f;
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid #c0504f;
+}
+.product-page .product-info .btn:hover {
+    border-color: #2a2b2f;
+}
+.product-page .product-slider .bx-controls .bx-pager .bx-pager-item, .product-page .product-slider .bx-controls .bx-pager .bx-pager-item a {
+    position: relative;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background: #ecedf1;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.product-page .product-slider .bx-controls .bx-pager .bx-pager-item a.active {
+    background: #cacbcf;
+}
+.product-page .product-slider .bx-controls, .product-page .product-slider .bx-controls .bx-pager {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+.interior-top .breadcrumbs {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.interior-top .breadcrumbs a {
+    color: #2a2b2f;
+}
+.interior-top .breadcrumbs .devider {
+    color: #2a2b2f;
+    padding: 0 3px;
+}
+.interior-top .breadcrumbs span {
+    color: #c0504f;
+}
+.home-page .product-info {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 60px 0;
+}
+.home-page .product-info h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 64px;
+    line-height: 64px;
+    padding-bottom: 15px;
+}
+.home-page .product-info p {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.home-page .product-info .product-slider-controls {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 100px;
+}
+.home-page .product-info .product-slider-controls a.bx-prev {
+    background: url(img/slider-prev.png) no-repeat center center;
+}
+.home-page .product-info .product-slider-controls a.bx-next {
+    background: url(img/slider-next.png) no-repeat center center;
+}
+.home-page .product-info .product-slider-controls a {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 5px;
+    text-indent: -9999px;
+    border: 1px solid #515151;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.home-page .product-slider-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 335px;
+    margin-top: 50px;
+}
+.home-page .product-slider-wrap .slide {
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 335px;
+}
+.home-page .product-slider-wrap .slide h4 {
+    position: relative;
+    font-family: 'BebasNeue Bold';
+    float: left;
+    margin: 40px 0 0 40px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000;
+    letter-spacing: 0;
+}
+.home-page .product-slider-wrap .slide h3 {
+    position: relative;
+    float: left;
+    margin: 40px 0 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2a2b2f;
+}
+.home-page .product-slider-wrap .slide:hover {
+    background-position: 0 -335px;
+}
+.home-page .product-slider-wrap .slide:hover > h4 {
+    color: #c0504f;
+}
+.home-page .product-slider-wrap .slide:hover > h3 {
+    color: #fff;
+}
+.home-page .product-slider-wrap .slide h4::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background: #2a2b2f;
+    bottom: -20px;
+    left: 0;
+}
+.home-page .product-slider-wrap .slide:hover > h4::after {
+    background: #dbdcde;
+}
+.home-page .product-info .product-slider-controls a:hover {
+    border-color: #c0504f;
+}
+.home-page .counters-wrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+.home-page .counters-wrap .info {
+    position: relative;
+    float: left;
+    width: 500px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 28px;
+    border-right: 1px solid #bf4f4e;
+}
+.home-page .counters-wrap .counters .counter {
+    position: relative;
+    float: left;
+    width: 190px;
+}
+.home-page .counters-wrap .counters .counter h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'BebasNeue Bold';
+    color: #d9dde0;
+    font-size: 78px;
+    line-height: 68px;
+    padding-bottom: 0;
+}
+.home-page .counters-wrap .counters .counter p {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.home-page .counters-wrap .counters {
+    position: relative;
+    float: right;
+}
+.home-page .kicker-banner {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 210px;
+    background: #c0504f;
+    text-align: left;
+    overflow: hidden;
+}
+.home-page .kicker-banner .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #ae4a4a;
+}
+.home-page .kicker-banner .banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.home-page .kicker-banner h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 64px;
+    line-height: 64px;
+    padding-bottom: 15px;
+    color: #2b2b33;
+    margin-top: 60px;
+}
+.home-page .kicker-banner h3 a {
+    color: #2b2b33;
+}
+.home-page .kicker-banner p {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+.home-page .kicker-banner .arrow {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: -20px;
+    background: url(img/slider-next.png) no-repeat center center;
+    border: 1px solid #333;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.home-page .kicker-banner .arrow:hover {
+    border-color: #fff;
+}
+.home-page .kicker-banner h3 a:hover {
+    color: #fff;
+}
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 60px 0 30px;
+    background: #2b2b33;
+    display: block;
+}
+footer .info {
+    position: relative;
+    float: left;
+    width: 240px;
+    text-align: left;
+}
+footer .info h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #c0504f;
+    letter-spacing: 0;
+    font-size: 26px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    font-family: 'BebasNeue Bold';
+    text-transform: uppercase;
+}
+footer .info p {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+}
+footer .footer-menu
+{
+    position: relative;
+    float: right;
+}
+#footer-menu {
+    list-style: none;
+}
+#footer-menu li {
+    display: block;
+    float: left;
+    margin-left: 24px;
+}
+#footer-menu li a {
+    position: relative;
+    font-family: 'BebasNeue Bold';
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#footer-menu li a:hover {
+    color: #c0504f;
+}
+footer .copyright {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #77777f;
+    text-align: left;
+}
+footer .copyright p {
+    position: relative;
+    float: left;
+    margin-top: 45px;
+}
+footer .copyright .logo {
+    float: right;
+    vertical-align: bottom;
+}
+.about-page {
+    text-align: left;
+    padding-bottom: 60px;
+}
+.about-page .content {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 80px;
+}
+.about-page .content .info {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    width: 50%;
+}
+.about-page .content h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 64px;
+    line-height: 64px;
+    padding-bottom: 15px;
+}
+.about-page .content .quote {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    width: 40%;
+}
+.about-page .content .quote p {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+}
+.about-page .content .quote .author {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+}
+.about-page .content .quote .author img {
+    float: right;
+    width: 98px;
+}
+.about-page .content .quote .author p {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: right;
+    float: none;
+    width: auto;
+    padding-right: 125px;
+    padding-top: 25px;
+}
+.about-page .content .quote .author p span {
+    color: #c0504f;
+}
+.about-page img {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.about-page .banners {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+.about-page .banners .heading {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+.about-page .banners .item {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.about-page .banners .item img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.about-page .banners .item:hover > img {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none;
+}
+.contact-page {
+    padding-bottom: 60px;
+}
+.contact-page .info {
+    position: relative;
+    float: left;
+    width: 370px;
+    margin-top: 30px;
+    padding-bottom: 110px;
+}
+.contact-page .info h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+    color: #c0504f;
+}
+.contact-page .info p {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding: 30px 0;
+}
+.contact-page .info p a {
+    font-weight: bold;
+    color: #2a2b2f;
+}
+.contact-page .info .socials {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.contact-page .info .socials p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.contact-page .info .socials p a {
+    font-weight: normal;
+}
+.contact-page .info p a:hover {
+    color: #c0504f;
+}
+.contact-page .info .socials p span {
+    padding: 0 5px;
+}
+.contact-page .box {
+    position: relative;
+    float: left;
+    width: 570px;
+    height: 380px;
+}
+.contact-page .box.gray {
+    background: #2b2b33;
+}
+.contact-page .box .content {
+    position: relative;
+    float: left;
+    margin: 80px 0 0 80px;
+}
+.contact-page .box .content h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 56px;
+    line-height: 60px;
+    color: #fff;
+    text-align: left;
+    font-family: 'BebasNeue Bold';
+}
+.contact-page .box .content a {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c0504f;
+    margin-top: 20px;
+}
+.contact-page .box .content a:hover {
+    color: #fff;
+}
+.become-distributor {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.distributors-page {
     padding-bottom: 60px;
 }

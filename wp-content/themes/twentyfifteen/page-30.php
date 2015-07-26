@@ -45,6 +45,11 @@
                 </div>
             <?php }?>
         </div>
+
+        <div class="become-distributor">
+            <h3><?php _e('Стать дистрибьютором'); ?></h3>
+            <a class="btn" href="<?php echo get_page_link(85); ?>"><?php _e('Связаться с нами') ?></a>
+        </div>
     </div>
 </div>
 
