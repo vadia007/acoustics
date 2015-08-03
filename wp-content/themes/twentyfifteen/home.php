@@ -6,36 +6,36 @@
                  style="background-image:url(<?php echo esc_url(get_template_directory_uri()); ?>/img/world-class-acoustics.jpg)">
                 <div class="inside">
                     <h2>
-                        World-Class
+                        Акустические материалы
                         <br>
-                        Acoustics
+                        мирового класса
                     </h2>
 
-                    <p>From finest materials to finest products.</p>
+                    <p>От лучших материалов к лучшим продуктам.</p>
                 </div>
             </div>
             <div class="slide"
                  style="background-image:url(<?php echo esc_url(get_template_directory_uri()); ?>/img/sonitus-acoustics-desosorber.jpg)">
                 <div class="inside">
                     <h2>
-                        World-Class
+                        Акустические материалы
                         <br>
-                        Acoustics
+                        мирового класса
                     </h2>
 
-                    <p>From finest materials to finest products.</p>
+                    <p>От лучших материалов к лучшим продуктам.</p>
                 </div>
             </div>
             <div class="slide"
                  style="background-image:url(<?php echo esc_url(get_template_directory_uri()); ?>/img/sonitus-quadsorber.jpg)">
                 <div class="inside">
                     <h2>
-                        World-Class
+                        Акустические материалы
                         <br>
-                        Acoustics
+                        мирового класса
                     </h2>
 
-                    <p>From finest materials to finest products.</p>
+                    <p>От лучших материалов к лучшим продуктам.</p>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
             <div class="inside">
                 <h3><?php _e('Наши продукты'); ?></h3>
 
-                <p>Наш список состоит более чем из <strong>250</strong> продуктов в <strong>10</strong> производственных
+                <p>Наш список состоит более чем из <strong>243</strong> продуктов в <strong>9</strong> производственных
                     линиях. Проверьте это и найти лучшее изделие для себя!</p>
 
                 <div class="product-slider-controls">
@@ -93,12 +93,12 @@
 
                     <div class="counters">
                         <div class="counter">
-                            <h3>10</h3>
+                            <h3>9</h3>
 
                             <p>Product lines</p>
                         </div>
                         <div class="counter">
-                            <h3>250</h3>
+                            <h3>247</h3>
 
                             <p>Products</p>
                         </div>
@@ -129,7 +129,7 @@
                     setup_postdata($post);?>
                     <div class="box <?php echo $item == 2 ? 'last' : ''; ?>">
                         <p class="date">
-                            <strong>NEWS / </strong>
+                            <strong>НОВОСТИ / </strong>
                             <?php the_time('j.n.Y'); ?>
                         </p>
 
@@ -147,25 +147,25 @@
             </div>
         </div>
 
-        <div class="kicker-banner">
-            <div class="bg">
-            </div>
-            <div class="inside">
-                <img class="banner"
-                     src="<?php echo esc_url(get_template_directory_uri()); ?>/img/sonitus-kicker.jpg" alt=""/>
-
-                <h3>
-                    <?php $taxonomy = get_term(15, 'product_category'); ?>
-
-                    <a href="<?php echo get_term_link(15, 'product_category'); ?>">
-                        <?php _e('KICKER'); ?>
-                    </a>
-                </h3>
-
-                <p><?php _e('WORLD`S FIRST "HEAD TO HEAD" BASS DRUM MUFFLER.'); ?></p>
-                <a class="arrow" href="<?php echo get_term_link(15, 'product_category'); ?>"></a>
-            </div>
-        </div>
+<!--        <div class="kicker-banner">-->
+<!--            <div class="bg">-->
+<!--            </div>-->
+<!--            <div class="inside">-->
+<!--                <img class="banner"-->
+<!--                     src="--><?php //echo esc_url(get_template_directory_uri()); ?><!--/img/sonitus-kicker.jpg" alt=""/>-->
+<!---->
+<!--                <h3>-->
+<!--                    --><?php //$taxonomy = get_term(15, 'product_category'); ?>
+<!---->
+<!--                    <a href="--><?php //echo get_term_link(15, 'product_category'); ?><!--">-->
+<!--                        --><?php //_e('KICKER'); ?>
+<!--                    </a>-->
+<!--                </h3>-->
+<!---->
+<!--                <p>--><?php //_e('WORLD`S FIRST "HEAD TO HEAD" BASS DRUM MUFFLER.'); ?><!--</p>-->
+<!--                <a class="arrow" href="--><?php //echo get_term_link(15, 'product_category'); ?><!--"></a>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </div>
 

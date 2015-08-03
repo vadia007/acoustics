@@ -39,7 +39,7 @@
         <div class="inside">
             <a href="/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/sonitus-acoustics.png" alt="Logo" class="logo">
                 </a>
-            <a href="#" class="menu-btn">Menu<span></span></a>
+            <a href="#" class="menu-btn">Меню<span></span></a>
         </div>
     </div>
 

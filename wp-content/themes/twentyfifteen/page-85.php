@@ -10,7 +10,7 @@
         </div>
 
         <div class="info">
-            <h3><?php _e('Sonitus Acoustics'); ?></h3>
+            <h3><?php _e('Sonitus Acoustics Украина'); ?></h3>
 
             <p>
                 <a href="mailto:info@sonitusacoustics.com">info@sonitusacoustics.eu</a>

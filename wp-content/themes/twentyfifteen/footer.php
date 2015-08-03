@@ -16,7 +16,7 @@
 
         <div class="inside">
             <div class="info">
-                <h2><?php _e('Акустика Sonitus');?></h2>
+                <h2><?php _e('Sonitus Acoustics Украина');?></h2>
                 <p>
                     Tina Ujevića 26, Koprivnica<br>
                     48000 Croatia
@@ -37,7 +37,7 @@
             <?php wp_nav_menu( $args );?>
 
             <div class="copyright">
-                <p><?php _e('© Sonitus Acoustics. All rights reserved.');?></p>
+                <p><?php _e('© Sonitus Acoustics Украина. All rights reserved.');?></p>
                 <img class="logo"
                      src="<?php echo esc_url(get_template_directory_uri()); ?>/img/sonitus-acoustics-footer.png"
                      alt="Logo"/>

@@ -374,8 +374,8 @@ function acoustics_add_new_meta_field() {
     ?>
     <div class="form-field">
         <label for="term_meta[category_type]"><?php _e( 'Тип' ); ?></label>
-        <input type="radio" name="term_meta[category_type]" id="term_meta[category_type]" checked value="absorbers"> Absorbers<br/>
-        <input type="radio" name="term_meta[category_type]" id="term_meta[category_type]" value="diffusers"> Diffusers<br/>
+        <input type="radio" name="term_meta[category_type]" id="term_meta[category_type]" checked value="absorbers"> Поглотители<br/>
+        <input type="radio" name="term_meta[category_type]" id="term_meta[category_type]" value="diffusers"> Рассеиватели<br/>
     </div>
 <?php
 }
@@ -393,8 +393,8 @@ function acoustics_edit_meta_field($term) {
     <tr class="form-field">
         <th scope="row" valign="top"><label for="term_meta[category_type]"><?php _e( 'Тип'); ?></label></th>
         <td>
-            <input type="radio" <?php echo $absorbers; ?> name="term_meta[category_type]" id="term_meta[category_type]" value="absorbers" > Absorbers<br/>
-            <input type="radio" <?php echo $diffusers; ?> name="term_meta[category_type]" id="term_meta[category_type]" value="diffusers"> Diffusers<br/>
+            <input type="radio" <?php echo $absorbers; ?> name="term_meta[category_type]" id="term_meta[category_type]" value="absorbers" > Поглотители<br/>
+            <input type="radio" <?php echo $diffusers; ?> name="term_meta[category_type]" id="term_meta[category_type]" value="diffusers"> Рассеиватели<br/>
         </td>
     </tr>
 <?php

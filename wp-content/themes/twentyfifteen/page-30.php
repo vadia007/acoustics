@@ -7,7 +7,7 @@
             <h1><?php the_title(); ?></h1>
         </div>
         <div class="tab-nav">
-            <a data-id="sonitus-acoustics" href="#" class="tab-nav-link active">Sonitus Acoustics</a>
+            <a data-id="sonitus-acoustics" href="#" class="tab-nav-link active">Sonitus Acoustics Украина</a>
             <a data-id="kicker" href="#" class="tab-nav-link">Kicker</a>
         </div>
         <?php $args = array(
@@ -47,7 +47,6 @@
         </div>
 
         <div class="become-distributor">
-            <h3><?php _e('Стать дистрибьютором'); ?></h3>
             <a class="btn" href="<?php echo get_page_link(85); ?>"><?php _e('Связаться с нами') ?></a>
         </div>
     </div>

@@ -4,13 +4,13 @@
 <div id="content" class="products-page">
     <div class="inside">
         <div class="interior-top">
-            <p><?php _e('Акустика sonitus');?></p>
+            <p><?php _e('Sonitus Acoustics Украина');?></p>
             <h1><?php the_title(); ?></h1>
             <div class="filter">
                 <select class="input" id="filter">
-                    <option value="all-types">Show All</option>
-                    <option value="absorbers">Absorbers</option>
-                    <option value="diffusers">Diffusers</option>
+                    <option value="all-types">Все продукты</option>
+                    <option value="absorbers">Поглотители</option>
+                    <option value="diffusers">Рассеиватели</option>
                 </select>
             </div>
         </div>

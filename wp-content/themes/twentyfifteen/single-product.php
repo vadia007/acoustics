@@ -4,16 +4,16 @@
 <div id="content" class="product-page">
     <div class="inside">
         <div class="interior-top">
-            <p><?php _e('Акустика sonitus');?></p>
+            <p><?php _e('Sonitus Acoustics Украина'); ?></p>
 
-            <?php $taxonomy = wp_get_post_terms($post->ID, 'product_category');?>
+            <?php $taxonomy = wp_get_post_terms($post->ID, 'product_category'); ?>
 
             <h1><?php the_title(); ?></h1>
 
             <div class="breadcrumbs">
-                <a href="<?php echo get_page_link(82);?>"><?php _e('Продукты');?></a>
+                <a href="<?php echo get_page_link(82); ?>"><?php _e('Продукты'); ?></a>
                 <span class="devider">/</span>
-                <a href="<?php echo get_term_link((int)$taxonomy[0]->term_id, 'product_category');?>">
+                <a href="<?php echo get_term_link((int)$taxonomy[0]->term_id, 'product_category'); ?>">
                     <?php echo $taxonomy[0]->name; ?>
                 </a>
                 <span class="devider">/</span>
@@ -28,84 +28,92 @@
 
                 <?php $custom_fields = get_post_custom($post->ID);
 
-                if(isset($custom_fields['wpcf-product-img'][0]) && [0])
+                if (isset($custom_fields['wpcf-product-img'][0]) && $custom_fields['wpcf-product-img'][0])
 
-                    foreach($custom_fields['wpcf-product-img'] as $img) {?>
+                    foreach ($custom_fields['wpcf-product-img'] as $img) {
+                        ?>
 
-                        <?php if($img) {?>
+                        <?php if ($img) { ?>
 
                             <div class="slide">
                                 <img src="<?php echo $img; ?>" alt=""/>
                             </div>
 
-                        <?php }?>
+                        <?php } ?>
 
-                    <?php }?>
+                    <?php } ?>
             </div>
         </div>
 
         <div class="product-info">
-            <?php if(isset($custom_fields['wpcf-description'][0]) && $custom_fields['wpcf-description'][0]) {
+            <?php if (isset($custom_fields['wpcf-description'][0]) && $custom_fields['wpcf-description'][0]) {
                 ?>
-                <h2><?php _e('Описание');?></h2>
+                <h2><?php _e('Описание'); ?></h2>
                 <div class="description">
-                    <p><?php echo $custom_fields['wpcf-description'][0];?></p>
+                    <p><?php echo $custom_fields['wpcf-description'][0]; ?></p>
                 </div>
 
-                <h2><?php _e('Характеристики');?></h2>
+            <?php } ?>
 
-                <?php if(isset($custom_fields['wpcf-demension'][0]) && $custom_fields['wpcf-demension'][0]) {?>
+            <h2><?php _e('Характеристики'); ?></h2>
 
-                    <div class="item">
-                        <label for=""><?php _e('Размер');?></label>
-                        <p><?php echo wpautop($custom_fields['wpcf-demension'][0]); ?></p>
-                    </div>
+            <?php if (isset($custom_fields['wpcf-demension'][0]) && $custom_fields['wpcf-demension'][0]) { ?>
 
-                <?php }?>
+                <div class="item">
+                    <label for=""><?php _e('Размер'); ?></label>
 
-                <?php if(isset($custom_fields['wpcf-material'][0]) && $custom_fields['wpcf-material'][0]) {?>
+                    <p><?php echo wpautop($custom_fields['wpcf-demension'][0]); ?></p>
+                </div>
 
-                    <div class="item">
-                        <label for=""><?php _e('Материал');?></label>
-                        <p><?php echo wpautop($custom_fields['wpcf-material'][0]); ?></p>
-                    </div>
+            <?php } ?>
 
-                <?php }?>
+            <?php if (isset($custom_fields['wpcf-material'][0]) && $custom_fields['wpcf-material'][0]) { ?>
 
-                <?php if(isset($custom_fields['wpcf-base-thickness'][0]) && $custom_fields['wpcf-base-thickness'][0]) {?>
+                <div class="item">
+                    <label for=""><?php _e('Материал'); ?></label>
 
-                    <div class="item">
-                        <label for=""><?php _e('Толщина основы панели');?></label>
-                        <p><?php echo wpautop($custom_fields['wpcf-base-thickness'][0]); ?></p>
-                    </div>
+                    <p><?php echo wpautop($custom_fields['wpcf-material'][0]); ?></p>
+                </div>
 
-                <?php }?>
+            <?php } ?>
 
-                <?php if(isset($custom_fields['wpcf-color'][0]) && $custom_fields['wpcf-color'][0]) {?>
+            <?php if (isset($custom_fields['wpcf-base-thickness'][0]) && $custom_fields['wpcf-base-thickness'][0]) { ?>
 
-                    <div class="item">
-                        <label for=""><?php _e('Цвет');?></label>
-                        <p><?php echo wpautop($custom_fields['wpcf-color'][0]); ?></p>
-                    </div>
+                <div class="item">
+                    <label for=""><?php _e('Толщина основы панели'); ?></label>
 
-                <?php }?>
+                    <p><?php echo wpautop($custom_fields['wpcf-base-thickness'][0]); ?></p>
+                </div>
 
-                <?php if(isset($custom_fields['wpcf-packege'][0]) && $custom_fields['wpcf-packege'][0]) {?>
+            <?php } ?>
 
-                    <div class="item">
-                        <label for=""><?php _e('Комплект упаковки');?></label>
-                        <p><?php echo wpautop($custom_fields['wpcf-packege'][0]); ?></p>
-                    </div>
+            <?php if (isset($custom_fields['wpcf-color'][0]) && $custom_fields['wpcf-color'][0]) { ?>
 
-                <?php }?>
+                <div class="item">
+                    <label for=""><?php _e('Цвет'); ?></label>
 
-                <p class="installation">
-                    <?php _e('Простая установка с распыляющим клеем или другими универсалиными средствами.');?>
-                </p>
+                    <p><?php echo wpautop($custom_fields['wpcf-color'][0]); ?></p>
+                </div>
 
-                <a class="btn" href="<?php echo get_page_link(85);?>"><?php _e('Связаться с нами')?></a>
+            <?php } ?>
 
-            <?php }?>
+            <?php if (isset($custom_fields['wpcf-packege'][0]) && $custom_fields['wpcf-packege'][0]) { ?>
+
+                <div class="item">
+                    <label for=""><?php _e('Комплект упаковки'); ?></label>
+
+                    <p><?php echo wpautop($custom_fields['wpcf-packege'][0]); ?></p>
+                </div>
+
+            <?php } ?>
+
+            <p class="installation">
+                <?php _e('Простая установка с распыляющим клеем или другими универсальными средствами.'); ?>
+            </p>
+
+            <a class="btn" href="<?php echo get_page_link(85); ?>"><?php _e('Связаться с нами') ?></a>
+
+
         </div>
 
     </div>

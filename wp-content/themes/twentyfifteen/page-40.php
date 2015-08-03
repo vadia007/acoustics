@@ -24,7 +24,7 @@
                 );?>
                 <div class="news-content">
                     <p class="date">
-                        <strong>NEWS / </strong>
+                        <strong>НОВОСТИ / </strong>
                         <?php the_time('j.n.Y'); ?>
                     </p>
 

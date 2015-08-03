@@ -4,7 +4,7 @@
 <div id="content" class="products-listing-page">
     <div class="inside">
         <div class="interior-top">
-            <p><?php _e('Акустика sonitus'); ?></p>
+            <p><?php _e('Sonitus Acoustics Украина'); ?></p>
 
             <?php $taxonomy = get_queried_object(); ?>
 
@@ -46,7 +46,6 @@
 
         <?php } ?>
         <div class="become-distributor">
-            <h3><?php _e('Стать дистрибьютором'); ?></h3>
             <a class="btn" href="<?php echo get_page_link(85); ?>"><?php _e('Связаться с нами') ?></a>
         </div>
 
