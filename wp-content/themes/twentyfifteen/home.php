@@ -88,24 +88,19 @@
             <div class="inside">
                 <div class="counters-wrap">
                     <p class="info">
-                        <?php _e('From the simple budget solution for a band garage to high class products for your studio, home cinema or even living room, depends where you wish to have a great sounding and looking space. We also have our drum accessory line, the Kicker.'); ?>
+                        <?php _e('Акустические материалы, используемые как для простых и бюджетных проектов, так и для высокоточных и амбициозных акустических проектов студий, домашних кинотеатров или даже жилых комнат - в зависимости от того, где вы хотите получить высококлассную акустику и хороший внешний вид.'); ?>
                     </p>
 
                     <div class="counters">
                         <div class="counter">
                             <h3>9</h3>
 
-                            <p>Product lines</p>
+                            <p>Продуктовых линий</p>
                         </div>
                         <div class="counter">
                             <h3>247</h3>
 
-                            <p>Products</p>
-                        </div>
-                        <div class="counter">
-                            <h3>14</h3>
-
-                            <p>Distributors</p>
+                            <p>Продуктов</p>
                         </div>
                     </div>
                 </div>

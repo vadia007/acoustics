@@ -107,6 +107,18 @@
 
             <?php } ?>
 
+            <?php if (isset($custom_fields['wpcf-price'][0]) && $custom_fields['wpcf-price'][0]) { ?>
+
+            <h2 class="product-price"><?php _e('Цена'); ?></h2>
+
+                <div class="item product-price">
+                    <label for=""><?php _e('Цена за единицу упаковки'); ?></label>
+
+                    <p><?php echo wpautop($custom_fields['wpcf-price'][0]); ?></p>
+                </div>
+
+            <?php } ?>
+
             <p class="installation">
                 <?php _e('Простая установка с распыляющим клеем или другими универсальными средствами.'); ?>
             </p>
